@@ -1,6 +1,8 @@
 # jquery笔记
 ##引入jquery： 
-<script type="text/javascript" src="相对路径"></script>
+```<script type="text/javascript" src="相对路径">
+    
+```</script>
      (注：末尾引入，加载的时候能够找到选择器，实现js行为)
 
 ## 选择器$("选择器"):id class element *
@@ -27,16 +29,17 @@
 + 改变和获取每个元素的文本内容：.text();
 + 处理表单元素的值：.val();
 + 获取元素的索引值 .index()
++ 
 
 ## 3.DOM树遍历(找对象,作用对象)
 + .children() 获取直接子元素；
-+.contents() 获取直接元素的节点、文本节点、注释节点；</li>
-+.find() 获取子孙后代节点；</li>
-+.parent() 获取其父级元素；</li>
-+.next() 被选元素的下一个同辈元素；</li>
-+.siblings() 被选元素的所有同辈元素（兄弟姐妹）</li>
-+.prev() 被选元素的上一个同辈元素；</li>
-+.eq(index) 索引值为index 0,1,2...的元素</li>
++ .contents() 获取直接元素的节点、文本节点、注释节点；</li>
++ .find() 获取子孙后代节点；</li>
++ .parent() 获取其父级元素；</li>
++ .next() 被选元素的下一个同辈元素；</li>
++ .siblings() 被选元素的所有同辈元素（兄弟姐妹）</li>
++ .prev() 被选元素的上一个同辈元素；</li>
++ .eq(index) 索引值为index 0,1,2...的元素</li>
 
 ## 4.改变DOM树
 + .append() 插入后边（插入到子集）
@@ -75,4 +78,4 @@
 ## 7.$的作用
 + $("选择器")  jquery选择器
 + $("<img>")   创建一个jquery对象（标签）
-+ $(this)  把另一个对象编程jquery对象
++ $(this)  把Dom对象转化为jquery对象
