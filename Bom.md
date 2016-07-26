@@ -20,6 +20,6 @@
 + clearInterval 
 + setTimeout 
 + clearTimeout
-##location
+## location
 location.href="http://baidu.com"
 
