@@ -16,10 +16,10 @@
     </script>
 ```
 ###计时器
-+setInterval (函数名,毫秒数)
-+clearInterval 
-+setTimeout 
-+clearTimeout
++ setInterval (函数名,毫秒数)
++ clearInterval 
++ setTimeout 
++ clearTimeout
 ##location
 location.href="http://baidu.com"
 
