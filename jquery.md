@@ -1,8 +1,8 @@
 # jquery笔记
 ##引入jquery： 
-```<script type="text/javascript" src="相对路径">
+<script type="text/javascript" src="相对路径">
     
-```</script>
+</script>
      (注：末尾引入，加载的时候能够找到选择器，实现js行为)
 
 ## 选择器$("选择器"):id class element *
