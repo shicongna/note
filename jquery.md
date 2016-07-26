@@ -39,3 +39,30 @@
 + .replaceAll() 替换全部元素
 
 ## 5.JQuery动画
++ .show()
++ .hide()
++ .toggle()
++ .fadeIn()
++ .fadeOut()
++ .fadeToggle()
++ .slideDown()
++ .slideUp()
++ .slideToggle()
++ .fadeTo() 该方法用于调整匹配元素的透明度（1表示不透明 0表示透明）
++ .animate() 该方法用于自定义动画
++ .stop()停止动画
++ .delay()
+
+## 6.event事件对象
++ .event.pageX ; 返回鼠标指针相对于当前文档左边缘的位置
++ .event.pageY ; 返回鼠标指针相对于当前文档上边缘的位置
++ 显示鼠标指针在文档中的当前坐标位置:<br>
+    $(document).bind("mousemove", function(event){
+        $("#message").text('当前鼠标坐标:(' + event.pageX + ', ' + event.pageY + ')');
+    });
++ .event.target ; 返回最初触发事件的DOM元素 可以实现事件委托（点谁谁就是target）
+
+## 7.$的作用
++ $("选择器")  jquery选择器
++ $("<img>")   创建一个jquery对象（标签）
++ $(this)  把另一个对象编程jquery对象
