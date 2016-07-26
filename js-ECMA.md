@@ -23,7 +23,7 @@
 + 引用数据类型：对象
 + 原始数据类型与引用数据类型的区别：原始类型是值的比较，引用类型是所对应的对象是否相同（指针）
 + 类型检测 typeof(检测原始数据类型)  instance of（检测隐式转换）
-###  对象:属性的无序集合
+### 对象:属性的无序集合
 + 自定义对象
 + 数组对象Array()
 + 日期对象Date()
@@ -34,8 +34,18 @@
 ## 顺序
 ## 分支 if; if else; else if; switch
 ## 循环语句 for; for in; while; do while
+```javascript
+        var num = 1;
+        function count(){
+            for(var i=1;i<=100;i++){
+                num *= i;
+                console.log(num);
+            }
+        }
+        count()
+```
 
-# 函数：声明函数function  返回值return 形参 实参 调用函数
+## 函数：声明函数function  返回值return 形参 实参 调用函数
 ##JavaScript的作用域链
 ### 首先看下下面这段代码：
 ```javascript
