@@ -76,7 +76,7 @@
 ##3.arguments对象：函数的对象，能够找出函数的实参值及个数
 ##4.JavaScript的作用域链
 ### 首先看下下面这段代码：
-
+```
      var rain = 1;
      function rainman(){
         var man = 2;
@@ -87,9 +87,10 @@
         inner();    //调用inner函数
      }
     rainman();    //调用rainman函数
-```
-###观察alert(rain);这句代码。JavaScript首先在inner函数中查找是否定义了变量rain，如果定义了则使用inner函数中的rain变量；如果inner函数中没有定义rain变量，JavaScript则会继续在rainman函数中查找是否定义了rain变量，在这段代码中rainman函数体内没有定义rain变量，则JavaScript引擎会继续向上（全局对象）查找是否定义了rain；在全局对象中我们定义了rain = 1，因此最终结果会弹出'1'。
+    <!-- 观察alert(rain);这句代码。JavaScript首先在inner函数中查找是否定义了变量rain，如果定义了则使用inner函数中的rain变量；如果inner函数中没有定义rain变量，JavaScript则会继续在rainman函数中查找是否定义了rain变量，在这段代码中rainman函数体内没有定义rain变量，则JavaScript引擎会继续向上（全局对象）查找是否定义了rain；在全局对象中我们定义了rain = 1，因此最终结果会弹出'1'。
 作用域链：JavaScript需要查询一个变量x时，首先会查找作用域链的第一个对象，如果以第一个对象没有定义x变量，JavaScript会继续查找有没有定义x变量，如果第二个对象没有定义则会继续查找，以此类推。
-上面的代码涉及到了三个作用域链对象，依次是：inner、rainman、window。
-##5.函数声明时不执行，调用的时候执行
+上面的代码涉及到了三个作用域链对象，依次是：inner、rainman、window。 -->
+```
+
+## 5.函数声明时不执行，调用的时候执行
 
