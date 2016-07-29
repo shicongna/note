@@ -93,4 +93,28 @@
 ```
 
 ## 5.函数声明时不执行，调用的时候执行
+# 关于undefined与not define
+```javascript
+ <!--  测试案例1  -->
+console.log(a) 
+<!-- 报错 ReferenceError: a is not defined --> 
 
+<!-- 测试案例2  -->
+var a 
+console.log(a) 
+<!-- 无报错，但是输出undefined  -->
+
+<!-- 测试案例2  -->
+var b = {}; 
+console.log(b.a) 
+<!-- 无报错，但是输出undefined  -->
+
+<!-- 测试案例3  -->
+function c() { 
+} 
+var d = new c(); 
+console.log(d.a) 
+<!-- 无报错，但是显示undefined  -->
+```
+##总结： undefined可以翻译成：不明确的，也就是不知道用来干嘛的 
+ 而 not defined 可以翻译成 未定义的
