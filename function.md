@@ -69,4 +69,14 @@ fun(5)
      console.log("hello")
     })
 ```
+#立即执行函数（获取元素索引 (index)为例）
+```javascript
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].onclick=(function(x){
+            return function(){
+                console.log(x)
+        }
+    })(i)
+}
+```
 
