@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 300px;
+			background-color: pink;
+			display: none;
+		}
+		.city{
+			font-family: "Arial";
+		}
+		table tr td{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" id="btn1" value="位置"><br>
+	<iframe  width="600" height="300" frameborder="0" scrolling="no"></iframe>
+	<span class="city">北京</span><input type="button" id="btn2" value="切换">
+	<div class="box">
+		<table>
+			<tr>
+				<td class="bei">北京</td>
+				<td class="shang">上海</td>
+				<td class="qin">秦皇岛</td>
+			</tr>
+			<tr>
+				<td>北京</td>
+				<td>上海</td>
+				<td>秦皇岛</td>
+			</tr>
+			<tr>
+				<td>北京</td>
+				<td>上海</td>
+				<td>秦皇岛</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="s-jquery.js"></script>
+	<script type="text/javascript">
+	function fun(){
+		var src="key1-北京.html"
+		var attr=$("iframe").attr("src",src)
+	}
+	$("#btn1").bind("click",fun);
+	$("#btn2").bind("click",function(){
+		$(".box").css("display","block")
+		
+	})
+
+	// $("#btn1").click(function(){
+	// 	$(this).unbind("click",fun);
+	// });
+
+	$(".bei").click(function(){
+		var bei=$(this).text()
+		$(".city").text(bei)
+		var src="key1-北京.html"
+		var attr=$("iframe").attr("src",src)
+	})
+	
+	$(".shang").click(function(){
+		var shang=$(this).text()
+		$(".city").text(shang)
+		var src="key3-上海.html"
+		var attr=$("iframe").attr("src",src)
+	})
+	$(".qin").click(function(){
+		var qin=$(this).text()
+		$(".city").text(qin)
+		var src="key2-秦皇岛.html"
+		var attr=$("iframe").attr("src",src)
+	})
+
+// 	function fun(){
+// 		console.log("bind")
+// }
+// 	$("#btn1").bind("click",fun);
+
+// 	$("#btn1").click(function(){
+// 		$(this).unbind("click",fun);
+// 	});
+
+// 	$("#btn2").bind("click",function(){
+// 		console.log("s")
+// 	})
+	
+	</script>
+</body>
+</html>

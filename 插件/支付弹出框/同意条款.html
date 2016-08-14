@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		button{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="checkbox"  id="check" >同意<br>
+	<button>提交</button>
+	<script type="text/javascript" src="s-jquery.js"></script>
+	<script type="text/javascript">
+		$("input").click(function(){
+				$(this).attr("checked","checked");
+			})
+		$("button").click(function(){
+			var input=$("input").attr("checked")
+			if(input==undefined){
+				alert("请勾选同意按钮")
+			}else{
+				location.href="http://www.baidu.com"
+			}
+		})
+	</script>
+</body>
+</html>
